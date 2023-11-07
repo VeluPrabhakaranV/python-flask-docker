@@ -37,6 +37,6 @@ jobs:
         run: |
           aws lambda update-function-code \
             --function-name samplepython \
-            --zip-file fileb://mypythonapp.zip
+            --zip-file fileb://mypythonapp.zip \
             --region ap-south-1
         working-directory: ${{ github.workspace }}
