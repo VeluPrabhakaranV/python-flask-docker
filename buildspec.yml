@@ -13,6 +13,7 @@ phases:
       - docker build -t python .
       - docker tag python:latest 562041613760.dkr.ecr.us-east-1.amazonaws.com/python:latest
       - docker tag python:latest 562041613760.dkr.ecr.us-east-1.amazonaws.com/python:$IMAGE_TAG
+
   
   post_build:
     commands:
